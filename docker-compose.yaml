@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  pytorch:
+    build: .
+    command: tail -f /dev/null
+    volumes:
+      - .:/main
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            count: 1
+            capabilities: [gpu]
