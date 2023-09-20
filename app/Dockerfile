@@ -9,6 +9,7 @@ COPY requirements.txt .
 
 # Install the dependencies
 RUN pip install --no-cache-dir -r requirements.txt
+RUN apt-get update && apt-get install -y git-lfs
 
 # Set the environment variables
 ENV LC_ALL=C.UTF-8

@@ -21,7 +21,9 @@ To use the model, simply clone this repository and install the requirements:
 git clone https://github.com/bard/face-mask-detection.git
 cd face-mask-detection
 pip install -r requirements.txt
+git lfs fetch
 ```
+As the model is quite large, LFS is used to track this file. In case fetch did not properly download the full file, download the model from Github directly.
 Once the requirements are installed, you can load the model and make predictions as follows:
 
 ```
@@ -73,6 +75,8 @@ To run the Streamlit app, run the following command:
 docker-compose up -d
 ```
 As this loads in the entire model as well, it will require some time (total size of the container ~ 3 GB), so please be patient. Then open a web browser and navigate to `http://localhost:8501`.
+
+<img title="Prediction result" alt="Prediction result" src="images/streamlit_example.gif">
 
 ## Additional Information
 The Docker Compose file sets up a two-container environment, with one container for the PyTorch model and the other container for the Streamlit app. The containers are configured to prioritize the GPU, but will also work on a CPU-only machine.
