@@ -5,7 +5,7 @@ Face mask detection is an important task for a number of reasons. First, it can 
 This repository contains a face mask detection model trained using PyTorch. The model was trained on the Face Mask 12K Images Dataset, and it achieves an accuracy of over 99% on the test set.
 The model can be used in a variety of ways. For example, it could be used to develop a mobile app that allows users to check whether they are wearing their masks correctly. It could also be used to develop a system that monitors public spaces for people who are not wearing masks.
 
-This repository contains a face mask detection model trained using PyTorch. The model was trained on the Face Mask 12K Images Dataset: `https://www.kaggle.com/datasets/ashishjangra27/face-mask-12k-images-dataset`.
+The model was trained on the Face Mask 12K Images Dataset: `https://www.kaggle.com/datasets/ashishjangra27/face-mask-12k-images-dataset`.
 
 ## Example
 <img title="Prediction result" alt="Prediction result" src="images/mask_prediction.png">
